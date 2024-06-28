@@ -1,5 +1,5 @@
 server:
-  port: 8086
+  port: 8087
   servlet:
     context-path: /media-process
   tomcat:
@@ -7,6 +7,9 @@ server:
       max: 2
 
 spring:
+  threads:
+    virtual:
+      enabled: true
   datasource:
     url: jdbc:h2:mem:appdb
     driverClassName: org.h2.Driver
